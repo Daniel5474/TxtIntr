@@ -1,12 +1,7 @@
 #include <unistd.h>
-#include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
-#include <vector>
-#include <algorithm>
-#include <sstream>
 #include <cmath>
-#include <stack>
 
 using namespace std;
 
@@ -21,10 +16,8 @@ int main(int argc, char **argv) {
         cout << "Пример ./имя файла -o sinr 1" << endl;
         return 0;
     }
-    vector<double> a;
     double x;
     double p = 3.14;
-    //int opt; 
     while((opt = getopt(argc, argv, "o:")) != -1) { 
         switch(opt) {
              case 'o':
